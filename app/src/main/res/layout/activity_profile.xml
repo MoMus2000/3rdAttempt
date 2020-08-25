@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/download"
+        android:onClick="handleImageClick"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:layout_alignParentLeft="true">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="325dp"
+        android:gravity="center"
+        android:id="@+id/nAME"
+        android:text="name"
+        android:layout_alignParentLeft="true">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="350dp"
+        android:gravity="center"
+        android:id="@+id/Phone"
+        android:text="Phone"
+        android:layout_alignParentLeft="true">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="375dp"
+        android:gravity="center"
+        android:id="@+id/email"
+        android:text="name"
+        android:layout_alignParentLeft="true">
+
+    </TextView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA3E0F6"
+        app:menu="@menu/my_navigation_items"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

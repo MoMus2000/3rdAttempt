@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Post">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/PostImage"
+        app:srcCompat="@drawable/ic_add_a_photo_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttondesign"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:hint="Whats Ur text"
+        android:id="@+id/postText"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Publish"
+        android:id="@+id/Postings"
+        android:background="@drawable/buttondesign"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+</LinearLayout>
